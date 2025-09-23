@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { addBook, getBooks } from "../services/BookService"; // ✅ API helpers
+import { addBook, getBooks } from "../services/BookService"; 
 
 const SellNotes = () => {
   const { token } = useContext(AuthContext);
@@ -15,7 +15,7 @@ const SellNotes = () => {
   const [cover, setCover] = useState(null);
   const [file, setFile] = useState(null);
 
-  const [books, setBooks] = useState([]); // ✅ Books from backend
+  const [books, setBooks] = useState([]); 
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 

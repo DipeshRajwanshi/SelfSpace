@@ -4,7 +4,7 @@ export const addBook = async (formData, token) => {
     headers: {
       Authorization: `Bearer ${token}`,
     },
-    body: formData, // ✅ no JSON.stringify because we are uploading files
+    body: formData, //  no JSON.stringify because we are uploading files
   });
 
   if (!res.ok) throw new Error("Failed to add book");
